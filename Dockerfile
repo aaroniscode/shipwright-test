@@ -24,4 +24,4 @@ RUN mkdir src
 RUN pip install --upgrade torch
 
 RUN git clone https://github.com/Dao-AILab/flash-attention.git --depth 1 --branch v2.8.1 /src/flash-attention
-RUN cd /src/flash-attention/hopper && MAX_JOBS=12 python setup.py install
+RUN cd /src/flash-attention/hopper && MAX_JOBS=16 python setup.py install
